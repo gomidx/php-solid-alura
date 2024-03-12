@@ -2,7 +2,7 @@
 
 namespace Alura\Solid\Model;
 
-class AluraPlus extends Video implements Scorable
+class AluraPlus extends Video implements Scorable, Watchable
 {
     private $category;
 

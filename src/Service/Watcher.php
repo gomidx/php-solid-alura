@@ -2,20 +2,12 @@
 
 namespace Alura\Solid\Service;
 
-use Alura\Solid\Model\AluraPlus;
-use Alura\Solid\Model\Course;
+use Alura\Solid\Model\Watchable;
 
 class Watcher
 {
-    public function watchCourse(Course $course): void
+    public function watch(Watchable $content): void
     {
-        foreach ($course->getVideos() as $video) {
-            $video->watch();
-        }
-    }
-
-    public function watchAluraPlus(AluraPlus $aluraPlus): void
-    {
-        $aluraPlus->watch();
+        $content->watch();
     }
 }
